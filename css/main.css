@@ -83,20 +83,26 @@ textarea {
   resize: vertical;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*HEADER AREA*/
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 20px;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
@@ -113,7 +119,14 @@ header .content-wrapper {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width:
+  width: 100%;
+}
+
+/*HERO AREA*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .hero-area h1 {
@@ -140,10 +153,6 @@ header nav ul {
   padding: 22px;
 }
 
-.form input {
-
-  }
-
 .form-description h3 {
   display: flex;
   align-items: center;
@@ -162,22 +171,30 @@ header nav ul {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*FOOTER AREA*/
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .content-wrapper {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
 }
 
-.footer p {
+footer p {
   margin: 0;
+}
+
+footer .contact {
+margin-bottom: 50px;
 }
 
 /*ASIDE*/
@@ -189,7 +206,6 @@ aside {
 }
 
 /*FEATURES*/
-
 .features p {
   display: flex;
   align-items: center;
@@ -206,19 +222,24 @@ aside {
     justify-content: center;
 }
 
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
 /*REVIEWS*/
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 20px;
 }
 
 .reviews h2 {
-  width: 290%;
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
 }
+
 /*ABOUT PAGE*/
 .mission {
   display: flex;
@@ -231,6 +252,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;!
 }
 
 .contact h4 {
@@ -262,6 +284,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px 0;
 }
 /*FAQ PAGE*/
 .faq {
@@ -271,11 +294,20 @@ aside {
   flex-flow: row wrap;
 }
 
-faq .content-wrapper {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
